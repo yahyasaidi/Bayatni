@@ -1,0 +1,139 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: auto !important;
+}
+
+.glass-card {
+  background-color: transparent;
+  border: 0;
+  justify-self: center;
+  width: 80% !important;
+}
+
+/* Add this rule to make hotel cards take full width */
+.hotel-card.glass-card {
+  width: 100% !important;
+}
+
+.hotel-card {
+  transition: all 0.3s ease;
+}
+
+.hotel-card:hover {
+  transform: translateY(-5px);
+}
+
+.hotel-image img {
+  transition: transform 0.5s ease;
+}
+
+.hotel-card:hover .hotel-image img {
+  transform: scale(1.05);
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 8px;
+  background: linear-gradient(to right, #0ea5e9, #38bdf8);
+  border-radius: 5px;
+  background-image: linear-gradient(#0ea5e9, #0ea5e9);
+  background-repeat: no-repeat;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 2px 0 #555;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+}
+.delay-200 {
+  animation-delay: 0.2s;
+}
+.delay-300 {
+  animation-delay: 0.3s;
+}
+.delay-400 {
+  animation-delay: 0.4s;
+}
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+/* Add these styles at the end of the file */
+
+/* Payment form styles */
+#payment-form input[type="text"] {
+  font-family: monospace;
+}
+
+#credit-card-fields {
+  transition: all 0.3s ease;
+}
+
+/* Room type selection highlight */
+#modal-room-type option:checked {
+  background-color: #0ea5e9;
+}
+
+/* Payment method icons */
+.payment-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Status badges */
+.status-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status-confirmed {
+  background-color: #10b981;
+  color: white;
+}
+
+.status-waiting {
+  background-color: #f59e0b;
+  color: white;
+}
+
+/* Enhance the booking summary section */
+#booking-form .bg-white\/10 {
+  transition: all 0.3s ease;
+}
+
+#booking-form .bg-white\/10:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}

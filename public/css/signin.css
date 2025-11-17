@@ -1,0 +1,179 @@
+html, body, main, header, div {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+main {
+  position: relative;
+  width: max-content;
+  justify-self: center;
+  transition-duration: 1s;
+  height: 500px;
+}
+
+.auth-card {
+  margin-top: 50%;
+  border-radius: 1rem;
+  backdrop-filter: blur(15px);
+  box-shadow: 0px 15px 100px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-card input {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  color: white;
+  transition: box-shadow 0.3s ease;
+  background: transparent;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+label {
+  color: white !important;
+}
+
+.signinForm { 
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+}
+
+.inputForm {
+  border: 0.5px white solid;
+  border-radius: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  transition-duration: 0.5s;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  width: 300px;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.inputForm:focus-within {
+  scale: 1.1;
+  border: 2px solid black;
+  box-shadow: 0 5px 30px black;
+  transition-duration: 0.5s;
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: transparent;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition-duration: 1s;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  gap: 10px;
+}
+  
+input::placeholder {
+  font-size: 14px;
+  color: white !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+  
+input:focus {
+  outline: none;
+  background-color: transparent;
+  transition-duration: 1s;
+}
+
+.span {
+  font-size: 14px;
+  margin-left: 5px;
+  color: rgb(236, 236, 236);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.inputSubmit {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.button-submit {
+  height: 50px;
+  width: max-content;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: none;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition-duration: 1s;
+}
+
+.button-submit:hover {
+  box-shadow: 0px 10px 30px rgb(245, 244, 244);
+  transition-duration: 0.5s;
+}
+
+.p {
+  text-align: center;
+  color: #c1bdbd;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.remember-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.remember-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap; 
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.forgot-password {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 50px;
+  text-decoration: none;
+  color: rgb(238, 234, 234);
+  cursor: pointer;
+  text-decoration: underline;
+}

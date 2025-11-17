@@ -1,0 +1,45 @@
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 1rem 10%;
+    z-index: 1;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.domain{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown {
+    top: 100%;
+    left: 0;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 5px 7.5px;
+}
+
+#google_translate_element span{
+    display: none;
+}
+#google_translate_element{
+    color: white;
+    outline: none;
+}
+select.goog-te-combo {
+    padding: 5px;
+    border-radius: 10px;
+    width: 80%;
+    justify-self: center;
+    border: 0;
+}

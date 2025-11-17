@@ -1,0 +1,233 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: panBackgroundBody 30s linear infinite;
+    overflow: hidden;
+}
+
+html , body , main {
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+
+#background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.bg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.bg-layer.visible {
+    opacity: 1;
+    animation: panBackgroundLayer 60s linear infinite;
+}
+
+@keyframes panBackgroundBody {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 0%; }
+}
+
+@keyframes panBackgroundLayer {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
+}
+
+
+
+
+main {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    animation: panBackgroundLayer 60s linear infinite;
+}
+
+
+.nav-btn {
+    border: 1px solid black;
+    color: white;
+    border-radius: 10px;
+    background-color: black;
+    padding: 8px 15px;
+    transition-duration: 0.5s;
+}
+
+.nav-btn:hover {
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    transition-duration: 1s;
+}
+
+.nav-btn-inverse {
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+
+.nav-btn-inverse:hover {
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+    transition-duration: 1s;
+}
+
+
+.intro {
+    margin-top: 50px;
+}
+
+.title {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: white;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.bio {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.main-btn {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    border: 1px solid #4088bd;
+    color: white;
+    border-radius: 25px;
+    background-color: #4088bd;
+    padding: 20px 35px;
+    transition-duration: 0.5s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main-btn:hover {
+    border: 2px solid white;
+    color: black;
+    background-color: white;
+    scale: 1.1;
+    transition-duration: 1s;
+}
+
+
+#map {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    height: 400px;
+    width: 400px;
+    border-radius: 500px;
+    border: 3px solid white;
+}
+.loader {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 25px 75px rgba(0,0,0,0.55);
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    top: 25%;
+    left :25%; 
+  }
+  
+  .loader::before {
+    content: '';
+    position: absolute;
+    inset: 20px;
+    background: transparent;
+    border: 1px dashed#444;
+    border-radius: 50%;
+    box-shadow: inset -5px -5px 25px rgba(0,0,0,0.25),
+    inset 5px 5px 35px rgba(0,0,0,0.25);
+  }
+  
+  .loader::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px dashed#444;
+    box-shadow: inset -5px -5px 25px rgba(0,0,0,0.25),
+    inset 5px 5px 35px rgba(0,0,0,0.25);
+  }
+  
+  .loader span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    transform-origin: top left;
+    animation: radar81 2s linear infinite;
+    border-top: 1px dashed #fff;
+  }
+  
+  .loader span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: seagreen;
+    transform-origin: top left;
+    transform: rotate(-55deg);
+    filter: blur(30px) drop-shadow(20px 20px 20px seagreen);
+  }
+  
+  @keyframes radar81 {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }

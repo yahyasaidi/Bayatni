@@ -1,0 +1,1 @@
+{"version":1,"defects":{"BayatniTest::testValidBookingCreation":7,"StressTest::testStressHomePage":7,"StressTest::testStressParallel":5},"times":{"BayatniTest::testHotelSearchByRegion":0.065,"BayatniTest::testInvalidEmailRegistration":0.002,"BayatniTest::testValidBookingCreation":0.031,"StressTest::testStressHomePage":19.906,"StressTest::testStressParallel":22.674}}
